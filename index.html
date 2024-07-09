@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="../dist/output.css">
+    
+    <title>credit cart</title>
+</head>
+<body class="bg-[rgb(221,223,230)]">
+    <!-- npx tailwindcss -i ./src/css/master.css -o ./dist/output.css --watch -->
+    <!-- box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; -->
+    <main class="w-full overflow-y-hidden font-primary">
+        <section class="w-full h-[900px] flex justify-center items-center">
+            <section class="w-[400px] h-[531px] border rounded-[10px] bg-[rgb(230,230,230)]">
+                    <div class="row justify-center items-center  ">
+                            <div class="mt-[10px]">
+                                <h2 class="text-[rgb(89,75,69)] bold text-[30px]">Payment</h2>
+                            </div>
+                            <div class="cart shadow-sh mt-[20px] w-[300px] h-[170px] bg-gradient-to-bl from-[#ffecc7] to-[#d0b978]">
+                                    <div class="row">
+                                        <figure class="flex justify-end w-full px-[20px]">
+                                            <img src="img/icons8-mastercard-48.png" alt="">
+                                        </figure>
+                                        <div class="w-full row px-[20px] mt-[10px]">
+                                                <span class="capitalize w-full text-[rgb(134,128,128)] text-[12px]">CARD NUMBER</span>
+                                                <span class="sp1 font-bold text-[20px]">0000 0000 0000 0000</span>
+                                               
+                                        </div>
+                                        <div class="w-full flex justify-between  px-[20px] mt-[10px]">
+                                                    <div class="w-1/2 ">
+                                                            <span class="text-[rgb(134,128,128)] text-[12px]">EXPIRATION</span><br>
+                                                            <span class="sp2 font-bold text-[20px]">00/00</span>
+                                                    </div>
+                                                    <div class="w-1/2 ">
+                                                        <span class="text-[rgb(134,128,128)] text-[12px]">CVC</span><br>
+                                                        <span class="sp3 font-bold text-[20px]">000</span>
+                                                    </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="w-full mt-[40px] flex justify-center">
+                                <input type="text" required id="cartnumber" placeholder="0000 0000 0000 0000" class="h-[40px] w-[77%] rounded-[6px] p-2">
+                            </div>
+                            <div class="w-full mt-[20px] flex gap-10 justify-center ">
+                                <input type="text" id="date" placeholder="MM/YY" class="h-[40px] w-3/6 rounded-[6px] p-2" required>
+                                <input type="text" id="cvv" placeholder="cvc" class="h-[40px] w-1/6 rounded-[6px] p-2" required>
+                            </div>
+                            <div class="w-full mt-[20px] flex justify-center">
+                                <button id="btn" type="reset" class="capitalize text-[20px] h-[50px] w-[319px] rounded-[10px] bg-black text-white p-2">submit</button>
+                            </div>   
+                    </div>
+            </section>
+        </section>
+
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>

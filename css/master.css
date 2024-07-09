@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@font-face {
+  font-family: googel;
+  src: url(../font/Wittgenstein-VariableFont_wght.ttf) format(ttf);
+}
+input:focus {
+  outline-color: rgb(3, 3, 157);
+}
+.shake {
+  animation-name: shake;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
